@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<title>هموساتي 👸🏻</title>
+
+<style>
+body {
+  background: #ffe6f2;
+  font-family: "Arial", sans-serif;
+  text-align: center;
+  direction: rtl;
+  overflow-x: hidden;
+}
+
+.corner {
+  position: fixed;
+  font-size: 14px;
+  color: #ff69b4;
+  opacity: 0.8;
+}
+.top-left { top: 10px; left: 10px; }
+.top-right { top: 10px; right: 10px; }
+.bottom-left { bottom: 10px; left: 10px; }
+.bottom-right { bottom: 10px; right: 10px; }
+
+.box {
+  background: white;
+  width: 90%;
+  max-width: 360px;
+  margin: 60px auto;
+  padding: 20px;
+  border-radius: 25px;
+  box-shadow: 0 0 20px pink;
+}
+
+button {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 12px;
+  border: none;
+  border-radius: 20px;
+  background: #ff69b4;
+  color: white;
+  font-size: 16px;
+}
+
+.big {
+  font-size: 22px;
+  color: #ff1493;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="corner top-left">هموساتي الكيوت 🐱</div>
+<div class="corner top-right">Hello Kitty vibes 🎀</div>
+<div class="corner bottom-left">دلعي وبس 💗</div>
+<div class="corner bottom-right">أحبچ 😌</div>
+
+<div class="box" id="game">
+
+<h2>هلو هموساتي 👸🏻👸🏻</h2>
+<button onclick="step2()">هلو حبيبيييي 💗</button>
+
+</div>
+
+<audio id="song">
+  <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+function step2(){
+  game.innerHTML = `
+  <h2>شلونهااا الحلوه مال كلبي؟ 😉</h2>
+  <button onclick="step3('good')">تسأل عنككك مشتاقتلك 💕</button>
+  <button onclick="step3('bad')">مو زينه انيي 🥺</button>
+  `;
+}
+
+function step3(){
+  game.innerHTML = `
+  <h2>هممم نايمههه زين حبيبتي؟ 😴</h2>
+  <button onclick="hug()">أحبك فدوه لحضنك 🫂</button>
+  <button onclick="head()">راسي دوجعني اميرر 😔</button>
+  `;
+}
+
+function hug(){
+  game.innerHTML = `
+  <p class="big">أعشقجججججججججج 🫂🫂🫂</p>
+  <p>حضن دافي وبوسة ما تخلص 💋</p>
+  <button onclick="step5()">كملي 💗</button>
+  `;
+}
+
+function head(){
+  game.innerHTML = `
+  <p>هموساتتت ابد مترضى تتعب 😤</p>
+  <p>تعالي يمي، خل أبوس هالراس الحلو 💋</p>
+  <p>إذا مماكله كومي اكلي وخذي مسكن</p>
+  <p>لااا أبوسج بوسة أغميچ 😘</p>
+  <button onclick="step5()">كملي 💗</button>
+  `;
+}
+
+function step5(){
+  game.innerHTML = `
+  <h2>بصراحه بصراحه تحبين اموري؟ 😌</h2>
+  <button onclick="love()">أحبه احبه احبه اموت عليه 💕</button>
+  <button onclick="meh()">اف لا ما احبه 😒</button>
+  `;
+}
+
+function love(){
+  game.innerHTML = `
+  <p>تره هو هم يعشقج</p>
+  <p>يحبج، يهواج، ذايب، ميت بيج كلششش 💗</p>
+  <button onclick="song()">كملي 🎵</button>
+  `;
+}
+
+function meh(){
+  game.innerHTML = `
+  <p>who cares baby 😉</p>
+  <p>المهم اني أحبج 😌</p>
+  <button onclick="song()">كملي 🎵</button>
+  `;
+}
+
+function song(){
+  document.getElementById("song").play();
+  game.innerHTML = `
+  <p>اغنيتنا 🎶</p>
+  <p>اذا في يوم حسيت نفسك وحيد</p>
+  <p>اني حضنك… اني بيتك 🤍</p>
+  <button onclick="step7()">كملي 💗</button>
+  `;
+}
+
+function step7(){
+  game.innerHTML = `
+  <h2>تعالي رجعي لحضني اشتاقيتلج 🫂</h2>
+  <button onclick="final()">اجيتككك حبيبي 💕</button>
+  <button onclick="final()">اريد اشوف اخر صفحه 🤭</button>
+  `;
+}
+
+function final(){
+  game.innerHTML = `
+  <p>لِعَيْنَيْكِ ما يلقى الفؤادُ وما لَقِي...</p>
+  <p>ولولا الهوى ما ذلّ في الأرض عاشقُ</p>
+  <p>أغرك مني أن حبك قاتلي...</p>
+  <p>وأنك مهما تأمري القلب يفعل</p>
+  <br>
+  <p class="big">I really love u girl 😕<br>I mean it</p>
+  `;
+}
+</script>
+
+</body>
+</html>
