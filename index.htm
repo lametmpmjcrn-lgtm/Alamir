@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<title>هموسات 💗</title>
+<style>
+body {
+  background: #ffddee;
+  font-family: Arial;
+  text-align: center;
+  padding-top: 50px;
+}
+.box {
+  background: white;
+  padding: 20px;
+  border-radius: 20px;
+  width: 300px;
+  margin: auto;
+}
+button {
+  margin: 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  background: #ff69b4;
+  color: white;
+  font-size: 16px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="box" id="game">
+  <h2>هلو هموسات 💕</h2>
+  <p>شلونج اليوم؟</p>
+  <button onclick="good()">بخير 🤍</button>
+  <button onclick="bad()">مو بخير 🥺</button>
+</div>
+
+<script>
+function good() {
+  document.getElementById("game").innerHTML =
+  "<h2>فدوه 🥰</h2><p>دوسي هالبوسة 😘</p>";
+}
+
+function bad() {
+  document.getElementById("game").innerHTML =
+  "<h2>تعالي 🤍</h2><p>هاي حضن وبوسة لحد ما تضحكين 🤍😘</p>";
+}
+</script>
+
+</body>
+</html>
